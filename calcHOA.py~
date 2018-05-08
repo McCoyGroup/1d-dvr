@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import dvrClass 
 
 
-calculator=dvrClass.dvr(leftX=-2.0,rightX=4.0)
+calculator=dvrClass.dvr()
 T=calculator.calculateT()
 
 print '###### Harmonic Scan Data ########'
@@ -33,7 +33,7 @@ calculator.plotV(V,Psi_n,E)
 
 np.savetxt('HOScanData.dat', zip(calculator.x,np.diag(V)))
 
-print '################# MORSE POTENTIAL   ###########'
+print '#################'
 V2=calculator.calculateV('morse potential')
 E2,Psi2_n=calculator.calculateWavefunctions(T+V2)
 print 'E in cm-1', E2[0:20]*219474.6314

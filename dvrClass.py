@@ -321,7 +321,7 @@ class dvr (object):
         energies=eigenVals*au2wn
 
         minE=-energies[0]
-        maxE=5.0*(energies[1]-energies[0])
+        maxE=8.0*(energies[1]-energies[0])
 
 	ax1.set_ylim([minE,maxE])
 	ax2.set_ylim([minE,maxE])

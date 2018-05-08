@@ -1,0 +1,19 @@
+Hello!
+
+A brief tutorial:
+
+Most of the information that you are probably looking for is in dvrClass.py.
+
+The two files calcHOA.py and calcEtherScanData.py use the dvr class to calculation the vibrational energies and wavefunction for 1) the harmonic oscillator fit to H2 and 2) hydronium-ether OO scan.
+
+You should probably first test those two files.  The correct ZPE for them are:
+calcHOA.py HO scan data 2202.04141271, Harmonic Osc. analytical function: 2202.08556424, Morse: 2128.16912901  wavenumbers
+ 
+calcEtherScanData.py 148.725045536 wavenumbers
+
+Then for your new system, copy one of those two files and edit accordingly.  Updates dvrCalc.py may be necessary as well because it does not cover all possible molecular systems.
+
+
+git instructions:
+
+coming soon!

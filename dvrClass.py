@@ -232,6 +232,9 @@ class dvr (object):
 
     def LennardJones(self,x,epsilon, rm):
         return epsilon*(rm/x)**12-2.0*(rm/x)**6
+        
+    def Cubic(self,x,A,xo,B,x1,C):
+        return A*(x-x0)**3+B*(x-x1)**2+C
 
 ##########################################################
 #################END of POTENTIAL SECTION#################

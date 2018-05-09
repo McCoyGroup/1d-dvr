@@ -247,7 +247,9 @@ class dvr (object):
         elif particle=='H'or particle=='hydrogen' or particle=='proton':
             return 1.0*massH*massConversionFactor# 
         elif particle=='Ether-Hydronium':
-            reducedMass= (1.00000000/(4.0*massC+6.0*massH+massO))+(1.00000000/(3.0*massH+massO))
+            #red mass =(1)/(4.0*massC+7.0*massH+massO) for vinyl ether	     +(1.00000000/(2.0*massH+massO)
+	    #red mass =(1)/4.0*massC+6.0*massF+massO for fluorinated ether + (1.00000000/(3.0*massH+massO)
+	    reducedMass= (1.00000000/(4.0*massC+6.0*massH+massO))+(1.00000000/(3.0*massH+massO))
             print 'mass!', 1.0/reducedMass ,'amu', massConversionFactor/reducedMass , 'me'
             return massConversionFactor/reducedMass
         else:
